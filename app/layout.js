@@ -20,13 +20,13 @@ export default function RootLayout({ children }) {
       >
         {/* header */}
     <Header></Header>
-   <main className="min-h-screen max-w-screen-lg mx-auto">
+   <main className="min-h-screen my-28  max-w-screen-lg mx-auto">
    {children}
    </main>
         {/* Footer */}
         <footer className=" bg-blue-50 py-12">
           <div className="container  text-center  text-gray-600">
-          <p className="text-2xl  font-bold item-center">
+          <p className="text-2xl w-3/4 mx-auto  font-bold item-center">
           calculate your finance and wealth made by shohidul Islam
           </p>
           </div>
