@@ -11,12 +11,15 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import { LayoutDashboard, PenBox } from "lucide-react";
+import { checkUser } from "@/lib/checkUser";
 
-const Header = () => {
+
+const Header = async() => {
+  await checkUser()
   return (
     <div className="fixed  top-0 w-full bg-white backdrop-blur-md z-40 border-b  ">
       <nav className="max-w-screen-lg p-4 flex items-center justify-between mx-auto">
-        <Link href="/ddd">
+        <Link href="/">
           {" "}
           <Image
             src={"/bannerlogo.png"}
