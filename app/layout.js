@@ -2,6 +2,7 @@ import {  Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "@/components/ui/sonner";
 
 
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
    <main className="min-h-screen my-28  max-w-screen-lg mx-auto">
    {children}
    </main>
+   <Toaster richColors />
         {/* Footer */}
         <footer className=" bg-blue-50 py-12">
           <div className="container  text-center  text-gray-600">

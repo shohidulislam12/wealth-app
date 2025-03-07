@@ -41,6 +41,8 @@ const account=await db.account.creat({
 })
 const serializeaccount=  serializeTransaction(account )
 revalidatePath('/dashbord')
-return{success:true}
-  } catch {}
+return{success:true,data:serializeaccount}
+  } catch(err) {
+    throw new Error(err.messsage)
+  }
 }

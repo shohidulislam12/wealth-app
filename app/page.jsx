@@ -107,7 +107,7 @@ Effortless Financial Management at Your Fingertips
   <p className="text-blue-100 mb-8 max-w-2xl mx-auto  ">Take control of your finances with our smart and intuitive financial management system. Track expenses, manage budgets, and gain valuable insights to make informed financial decisions—all in one secure platform. </p>
   <Link className="" href={"/dashbord"}>
               {" "}
-              <Button className='bg-white animate-bounce text-blue-600 hover:bg-blue-50 ' variant="outline ">
+              <Button className='bg-white  animate-bounce text-blue-600 hover:bg-blue-50 ' variant="outline ">
                
                   Start Free trial 
                 
