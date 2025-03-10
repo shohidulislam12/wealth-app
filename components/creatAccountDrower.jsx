@@ -58,10 +58,10 @@ const CreatAccountDrower = ({ children }) => {
   }, [newAccount]);
 
   useEffect(() => {
-    if (error) {
-      toast.error(error.message || "Failed to create account");
-    }
-  }, [error]);
+    console.log("New Account:", newAccount);
+    console.log("Error:", error);
+  }, [newAccount, error]);
+  
 
   const onSubmit = async (data) => {
     await creatAccountFn(data);

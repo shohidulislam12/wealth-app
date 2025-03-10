@@ -1,9 +1,11 @@
-import { useState } from 'react';
-import { toast } from 'sonner';
+"use client"; // ✅ Add this to force the file to be a client component
+
+import { useState } from "react";
+import { toast } from "sonner";
 
 const useFetch = (cb) => {
-    const [data, setData] = useState(undefined); // ✅ Use `useState` instead of `useFormState`
-    const [loading, setLoading] = useState(false); // ✅ Use `false` instead of `null`
+    const [data, setData] = useState(undefined);
+    const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
     const fn = async (...args) => {
@@ -11,7 +13,7 @@ const useFetch = (cb) => {
         setError(null);
         try {
             const response = await cb(...args);
-            setData(response); // ✅ Use `setData` instead of `setDate`
+            setData(response);
             setError(null);
         } catch (err) {
             setError(err);
